@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 
     //pickups
     public int currentPickups = 0;
-    private int maxPickups = 5;
+    public int maxPickups = 5;
     public bool levelComplete = false;
 
     //audio

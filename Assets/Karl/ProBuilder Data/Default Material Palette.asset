@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   array:
   - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: ce81c96cc87b631489e5a2ed162bea73, type: 2}
+  - {fileID: 2100000, guid: 9379eb852a93fec4993c83f8bd53943a, type: 2}
+  - {fileID: 2100000, guid: c120b1e4e92cf60479b92c31bc64bad7, type: 2}
+  - {fileID: 2100000, guid: 43b63e484229c854886007981bf013c1, type: 2}
+  - {fileID: 2100000, guid: e15bc37858402db4bb3dd39660a2c5c5, type: 2}
+  - {fileID: 2100000, guid: b683324164a2cb949927efd05e8c0aee, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

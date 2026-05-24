@@ -60,7 +60,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dist = Vector3.Distance(player.transform.position, audioSources[0].transform.position);
+        if(audioSources != null)
+        {
+            dist = Vector3.Distance(player.transform.position, audioSources[0].transform.position);
+            playAudio();
+        }
+
         checkCompletion();
         updateText();
 

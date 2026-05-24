@@ -1093,9 +1093,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 435901584}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87050691d4c30954a9d39f985844ef60, type: 3}
+  m_Script: {fileID: 11500000, guid: dcef62cc2a47611429a59eb30ca0c26a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1818025619}
+  currentPickups: 0
+  maxPickups: 5
+  levelComplete: 0
+  audioSources:
+  - {fileID: 1186411758}
+  audioProx: 5
+  dist: 0
+  pText: {fileID: 573193230}
 --- !u!4 &435901586
 Transform:
   m_ObjectHideFlags: 0
@@ -1228,9 +1237,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 439375263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cdc03febefadfe4589ee2406b137e1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 836eef219b4de15489a6dc3a4d9abd09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextLevel: 
 --- !u!1 &564127366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1297,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573193228}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

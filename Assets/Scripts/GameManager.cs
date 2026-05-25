@@ -1,3 +1,4 @@
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 public class GameManager : MonoBehaviour
@@ -32,13 +33,23 @@ public class GameManager : MonoBehaviour
 
     private void playAudio()
     {
+
+
+
         for(int i = 0; i < audioSources.Length; i++)
         {
-            if(Vector3.Distance(player.transform.position, audioSources[i].transform.position) <= audioProx)
+            if(audioSources[i] != null)
             {
-                if (!audioSources[i].isPlaying)
+
+                dist = Vector3.Distance(player.transform.position, audioSources[0].transform.position);
+
+                if (Vector3.Distance(player.transform.position, audioSources[i].transform.position) <= audioProx)
                 {
-                    audioSources[i].Play();
+                    if (!audioSources[i].isPlaying)
+                    {
+                        audioSources[i].Play();
+
+                    }
                 }
             }
         }
@@ -62,7 +73,7 @@ public class GameManager : MonoBehaviour
     {
         if(audioSources != null)
         {
-            dist = Vector3.Distance(player.transform.position, audioSources[0].transform.position);
+
             playAudio();
         }
 

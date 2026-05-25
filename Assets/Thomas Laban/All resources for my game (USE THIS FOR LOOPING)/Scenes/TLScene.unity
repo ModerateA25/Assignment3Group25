@@ -9396,6 +9396,30 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6383098642048161486, guid: 1a8d1e641e4c50d44b36a9410e6dae68, type: 3}
+      propertyPath: m_Size.x
+      value: 6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383098642048161486, guid: 1a8d1e641e4c50d44b36a9410e6dae68, type: 3}
+      propertyPath: m_Size.y
+      value: 10.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383098642048161486, guid: 1a8d1e641e4c50d44b36a9410e6dae68, type: 3}
+      propertyPath: m_Size.z
+      value: 6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383098642048161486, guid: 1a8d1e641e4c50d44b36a9410e6dae68, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383098642048161486, guid: 1a8d1e641e4c50d44b36a9410e6dae68, type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383098642048161486, guid: 1a8d1e641e4c50d44b36a9410e6dae68, type: 3}
+      propertyPath: m_Center.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383098642048161486, guid: 1a8d1e641e4c50d44b36a9410e6dae68, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}

@@ -1,5 +1,8 @@
+using System.Reflection;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
@@ -32,13 +35,23 @@ public class GameManager : MonoBehaviour
 
     private void playAudio()
     {
+
+
+
         for(int i = 0; i < audioSources.Length; i++)
         {
-            if(Vector3.Distance(player.transform.position, audioSources[i].transform.position) <= audioProx)
+            if(audioSources[i] != null)
             {
-                if (!audioSources[i].isPlaying)
+
+                dist = Vector3.Distance(player.transform.position, audioSources[0].transform.position);
+
+                if (Vector3.Distance(player.transform.position, audioSources[i].transform.position) <= audioProx)
                 {
-                    audioSources[i].Play();
+                    if (!audioSources[i].isPlaying)
+                    {
+                        audioSources[i].Play();
+
+                    }
                 }
             }
         }
@@ -60,7 +73,18 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dist = Vector3.Distance(player.transform.position, audioSources[0].transform.position);
+        if(audioSources != null)
+        {
+
+            playAudio();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(0);
+        }
+
         checkCompletion();
         updateText();
 

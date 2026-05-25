@@ -1,6 +1,8 @@
 using System.Reflection;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
@@ -75,6 +77,12 @@ public class GameManager : MonoBehaviour
         {
 
             playAudio();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene(0);
         }
 
         checkCompletion();

@@ -1643,7 +1643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836eef219b4de15489a6dc3a4d9abd09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 
+  nextLevel: TLScene
 --- !u!1 &564127366
 GameObject:
   m_ObjectHideFlags: 0
